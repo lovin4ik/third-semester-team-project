@@ -1,7 +1,10 @@
 .guess-number {
-    width: 100%;
+    max-width: 1090px;
     height: 163px;
-    margin-top: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
 
     >.container {
         width: 576px;
@@ -10,7 +13,7 @@
     }
 
     &__title {
-        font-family: var(--font-family);
+        font-family: var(--montserrat);
         font-weight: 400;
         font-size: 16px;
         color: #000;
@@ -20,7 +23,7 @@
     }
 
     &__form {
-    width: 150px;
+        width: 150px;
         height: 35px;
         position: absolute;
         bottom: 0px;
@@ -30,16 +33,19 @@
     }
 
     &__input {
-    width: 150px;
+        width: 150px;
         height: 35px;
-            position: absolute;
+        position: absolute;
         border-radius: 20px;
-            padding: 10px 45px 10px 10px;   
+        padding: 10px 45px 10px 10px;
     }
 
     &__button {
         width: 35px;
         height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         left: 115px;
         border-radius: 0 20px 20px 0;
@@ -47,19 +53,24 @@
     }
 
     &__text {
-        font-family: var(--font-family);
-            font-weight: 400;
-            font-size: 12px;
-            text-align: right;
-            color: #039900;
-            position: absolute;
-            right: 0px;
-            bottom: 0px;
+        font-family: var(--montserrat);
+        font-weight: 400;
+        font-size: 12px;
+        text-align: right;
+        color: #039900;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
     }
 
-    &__line {
+    &__span::after {
+        width: 536px;
+        height: 1px;
+        content: "";
+        display: block;
         position: absolute;
         top: 127px;
         left: 20px;
+        background-color: #000;
     }
 }
